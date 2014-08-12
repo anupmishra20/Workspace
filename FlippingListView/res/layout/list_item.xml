@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flipper" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+ 
+   
+    <TextView
+        android:id="@+id/long_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Longitude"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+    
+      <TextView
+        android:id="@+id/text_longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Longitude"
+        android:typeface="sans"
+        android:layout_marginLeft="3dp"
+        android:textColor="#040404"
+        android:layout_toRightOf="@+id/long_title"
+        android:layout_marginRight="3dp"
+        android:textSize="15dip"
+        android:textStyle="bold|italic"/>
+ 
+  
+    <TextView
+        android:id="@+id/lati_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/long_title"
+        android:textSize="15dip"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:layout_marginTop="1dip"
+        android:text="@string/Latitude" />
+     <TextView
+        android:id="@+id/text_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Latitude"
+        android:typeface="sans"
+        android:textColor="#040404"
+        android:layout_marginLeft="3dp"
+        android:layout_below="@id/long_title"
+        android:layout_toRightOf="@+id/lati_title"
+        android:layout_marginRight="3dp"
+        android:textSize="15dip"
+        android:textStyle="bold|italic"/>
+    
+    <TextView
+        android:id="@+id/zip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lati_title"
+        android:textSize="15dip"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:layout_marginTop="1dip"
+        android:text="@string/Zip" />
+    
+     <TextView
+        android:id="@+id/text_zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zip"
+        android:typeface="sans"
+        android:textColor="#040404"
+        android:layout_below="@id/lati_title"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/zip_title"
+        android:layout_marginRight="3dp"
+        android:textSize="15dip"
+        android:textStyle="bold|italic"/>
+    
+     <TextView
+        android:id="@+id/date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zip_title"
+        android:textSize="15dip"
+        android:textColor="#040404"
+        android:textStyle="bold"
+        android:layout_marginTop="1dip"
+        android:text="@string/Date" />
+     
+     <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:typeface="sans"
+        android:textColor="#040404"
+        android:layout_below="@id/zip_title"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/date_title"
+        android:layout_marginRight="3dp"
+        android:textSize="15dip"
+        android:textStyle="bold|italic"/>
+ 
+   
+ 
+
+     <ImageView 
+        android:id="@+id/btn_delete"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/delete"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+ 
+</RelativeLayout>
+</ViewFlipper>

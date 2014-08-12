@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">" Flipping List View"</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- UI Strings names -->
+     <string name="FlippingListView">Flipping List View!</string>
+      <string name="AddNew">Add Current Location</string>
+       <string name="FlipView">Flip List View</string>
+       
+       <!-- List Items Strings -->
+       <string name="Longitude">Longitude: </string>
+       <string name="Latitude">Latitude: </string>
+       <string name="Zip">Zip: </string>
+       <string name="Date">Date: </string>
+
+</resources>
