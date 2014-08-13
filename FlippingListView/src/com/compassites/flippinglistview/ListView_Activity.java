@@ -24,7 +24,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.widget.ViewFlipper;
 
 import com.compassites.GPS.GPSTracker;
 import com.compassites.adapter.LocationList_Adapter;
@@ -142,7 +141,7 @@ public class ListView_Activity extends Activity  {
 					} catch (Exception e) {
 						e.printStackTrace();
 						Toast.makeText(getApplicationContext(), 
-								e.getMessage(), 
+								e.getMessage() + "\nReboot the device and try again.", 
 								Toast.LENGTH_LONG)
 								.show();
 					}
@@ -159,8 +158,7 @@ public class ListView_Activity extends Activity  {
 					
 					try {
 						
-						ViewFlipper vf = (ViewFlipper) locationAdapter.getView(0, null, null);
-						vf.showNext();
+					
 						
 					} catch (Exception e) {
 						e.printStackTrace();

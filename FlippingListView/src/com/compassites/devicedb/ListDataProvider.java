@@ -72,7 +72,6 @@ public class ListDataProvider extends ContentProvider {
     }
 	
 	
-
 	@Override
 	public int delete(Uri uri, String selection, String[] selectionArgs) {
 		int count = 0;
